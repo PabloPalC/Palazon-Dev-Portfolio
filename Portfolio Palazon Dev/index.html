@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =============================================
+       SEO PRIMARY
+       ============================================= -->
+  <title>palazondev — Frontend Developer | HTML, CSS, React, Shopify</title>
+  <meta name="description" content="Portfolio de palazondev, desarrollador frontend junior especializado en landings, ecommerce con Shopify, WordPress e integraciones con IA. Proyectos reales para negocios locales.">
+  <meta name="keywords" content="palazondev, desarrollador frontend, HTML CSS React, Shopify, WordPress, landing page, portfolio, developer junior, integracion IA, SEO">
+  <meta name="author" content="palazondev">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pablopalc.github.io/">
+
+  <!-- =============================================
+       OPEN GRAPH (WhatsApp, LinkedIn, Facebook)
+       ============================================= -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pablopalc.github.io/">
+  <meta property="og:title" content="palazondev — Frontend Developer">
+  <meta property="og:description" content="Desarrollador frontend junior. Landings, Shopify, WordPress, SEO e integraciones con IA. Proyectos reales para negocios locales.">
+  <meta property="og:image" content="https://pablopalc.github.io/og-image.jpg">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="palazondev">
+
+  <!-- =============================================
+       TWITTER / X CARD
+       ============================================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pablopalc.github.io/">
+  <meta name="twitter:title" content="palazondev — Frontend Developer">
+  <meta name="twitter:description" content="Desarrollador frontend junior. Landings, Shopify, WordPress, SEO e integraciones con IA.">
+  <meta name="twitter:image" content="https://pablopalc.github.io/og-image.jpg">
+
+  <!-- =============================================
+       SCHEMA.ORG — Person
+       ============================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "palazondev",
+    "url": "https://pablopalc.github.io/",
+    "sameAs": [
+      "https://github.com/pablopalc",
+      "https://www.instagram.com/palazon_dev",
+      "https://www.tiktok.com/@palazon_dev",
+      "https://ulirio.com"
+    ],
+    "jobTitle": "Frontend Developer",
+    "knowsAbout": ["HTML", "CSS", "React", "Shopify", "WordPress", "SEO", "IA Integration"],
+    "description": "Desarrollador frontend junior especializado en landings para negocios locales, ecommerce con Shopify, SEO e integraciones con IA."
+  }
+  </script>
+
+  <!-- =============================================
+       FONTS & STYLES
+       ============================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+<div id="cursor-label" aria-hidden="true"></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- =============================================
+     NAV
+     ============================================= -->
+<nav id="nav" role="navigation" aria-label="Navegación principal">
+  <a href="#" class="nav-logo">palazondev</a>
+  <ul class="nav-links">
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<section class="hero" aria-label="Presentación">
+  <div class="hero-inner">
+    <span class="hero-tag">Disponible para proyectos</span>
+    <h1 class="hero-name">
+      palazon<em>dev</em>
+    </h1>
+    <p class="hero-desc">
+      Desarrollador frontend junior especializado en crear experiencias web para negocios reales. Trabajo con HTML, CSS, React, Shopify y WordPress — con apoyo de IA para entregar más rápido y mejor.
+    </p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">Ver proyectos ↓</a>
+      <a href="#contact" class="btn-secondary">Contactar</a>
+    </div>
+  </div>
+
+  <div class="hero-lines" aria-hidden="true">
+    <svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice">
+      <line x1="50"  y1="0" x2="50"  y2="800" stroke="rgba(200,184,154,0.06)" stroke-width="1"/>
+      <line x1="120" y1="0" x2="120" y2="800" stroke="rgba(200,184,154,0.04)" stroke-width="1"/>
+      <line x1="200" y1="0" x2="200" y2="800" stroke="rgba(200,184,154,0.06)" stroke-width="1"/>
+      <line x1="290" y1="0" x2="290" y2="800" stroke="rgba(200,184,154,0.03)" stroke-width="1"/>
+      <line x1="370" y1="0" x2="370" y2="800" stroke="rgba(200,184,154,0.05)" stroke-width="1"/>
+      <line x1="0" y1="150" x2="400" y2="150" stroke="rgba(200,184,154,0.04)" stroke-width="1"/>
+      <line x1="0" y1="320" x2="400" y2="320" stroke="rgba(200,184,154,0.03)" stroke-width="1"/>
+      <line x1="0" y1="500" x2="400" y2="500" stroke="rgba(200,184,154,0.05)" stroke-width="1"/>
+      <line x1="0" y1="660" x2="400" y2="660" stroke="rgba(200,184,154,0.03)" stroke-width="1"/>
+      <circle cx="200" cy="400" r="120" fill="none" stroke="rgba(200,184,154,0.05)" stroke-width="1"/>
+      <circle cx="200" cy="400" r="200" fill="none" stroke="rgba(200,184,154,0.03)" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- =============================================
+     MARQUEE
+     ============================================= -->
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-track" id="marquee">
+    <div class="marquee-item">HTML <span class="marquee-dot"></span></div>
+    <div class="marquee-item">CSS <span class="marquee-dot"></span></div>
+    <div class="marquee-item"><em>React</em> <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Shopify <span class="marquee-dot"></span></div>
+    <div class="marquee-item">WordPress <span class="marquee-dot"></span></div>
+    <div class="marquee-item"><em>IA Integration</em> <span class="marquee-dot"></span></div>
+    <div class="marquee-item">SEO <span class="marquee-dot"></span></div>
+    <div class="marquee-item">GitHub Pages <span class="marquee-dot"></span></div>
+    <div class="marquee-item">HTML <span class="marquee-dot"></span></div>
+    <div class="marquee-item">CSS <span class="marquee-dot"></span></div>
+    <div class="marquee-item"><em>React</em> <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Shopify <span class="marquee-dot"></span></div>
+    <div class="marquee-item">WordPress <span class="marquee-dot"></span></div>
+    <div class="marquee-item"><em>IA Integration</em> <span class="marquee-dot"></span></div>
+    <div class="marquee-item">SEO <span class="marquee-dot"></span></div>
+    <div class="marquee-item">GitHub Pages <span class="marquee-dot"></span></div>
+  </div>
+</div>
+
+<!-- =============================================
+     STACK
+     ============================================= -->
+<section class="stack-section" id="stack" aria-label="Tecnologías">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Stack</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="stack-grid reveal">
+      <div class="stack-item">
+        <div class="stack-icon" aria-hidden="true">⬡</div>
+        <div class="stack-name">HTML / CSS</div>
+        <div class="stack-desc">Maquetación semántica, responsive design y animaciones CSS</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon" aria-hidden="true">◈</div>
+        <div class="stack-name">React</div>
+        <div class="stack-desc">Componentes reutilizables y lógica de interfaz moderna</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon" aria-hidden="true">◉</div>
+        <div class="stack-name">Shopify</div>
+        <div class="stack-desc">Tiendas online, temas personalizados y gestión de ecommerce</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon" aria-hidden="true">◫</div>
+        <div class="stack-name">WordPress</div>
+        <div class="stack-desc">Desarrollo de sitios con CMS, plugins y personalizaciones</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon" aria-hidden="true">◬</div>
+        <div class="stack-name">Integraciones IA</div>
+        <div class="stack-desc">Conexiones con Claude API para funcionalidades inteligentes</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon" aria-hidden="true">⬟</div>
+        <div class="stack-name">SEO</div>
+        <div class="stack-desc">Optimización on-page, metadatos, schema markup y Core Web Vitals</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     PROJECTS
+     ============================================= -->
+<section class="projects-section" id="projects" aria-label="Proyectos">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Proyectos</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <a href="https://ulirio.com" target="_blank" rel="noopener noreferrer"
+         class="project-card featured reveal"
+         aria-label="Ver proyecto Ulirio — tienda online Shopify">
+        <div class="project-card-inner">
+          <div class="project-info">
+            <div class="project-cat">Ecommerce · Shopify</div>
+            <h3 class="project-title">Ulirio</h3>
+            <p class="project-desc">Tienda online completa desarrollada en Shopify. Diseño, estructura de catálogo, integración de pasarela de pago y optimización de conversión.</p>
+            <div class="project-tags">
+              <span class="tag">Shopify</span>
+              <span class="tag">Ecommerce</span>
+              <span class="tag">Live</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="featured-badge">Proyecto real</span>
+            <div class="project-link" aria-hidden="true">↗</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pablopalc.github.io/Landing-UpperClub/" target="_blank" rel="noopener noreferrer"
+         class="project-card reveal" aria-label="Ver proyecto Upper Club">
+        <div class="project-card-inner">
+          <div class="project-cat">Landing Page</div>
+          <h3 class="project-title">Upper Club</h3>
+          <p class="project-desc">Landing de alto impacto para negocio local. Diseño orientado a conversión con secciones de servicios y llamada a la acción.</p>
+          <div class="project-footer">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="project-link" aria-hidden="true">↗</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pablopalc.github.io/Landing-ProjectBarber/" target="_blank" rel="noopener noreferrer"
+         class="project-card reveal" aria-label="Ver proyecto Project Barber">
+        <div class="project-card-inner">
+          <div class="project-cat">Landing Page · Barbería</div>
+          <h3 class="project-title">Project Barber</h3>
+          <p class="project-desc">Página para barbería con identidad visual oscura y masculina. Secciones de servicios, galería y reservas.</p>
+          <div class="project-footer">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="project-link" aria-hidden="true">↗</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pablopalc.github.io/Landing-Savage-Lounge/" target="_blank" rel="noopener noreferrer"
+         class="project-card reveal" aria-label="Ver proyecto Savage Lounge">
+        <div class="project-card-inner">
+          <div class="project-cat">Landing Page · Hostelería</div>
+          <h3 class="project-title">Savage Lounge</h3>
+          <p class="project-desc">Diseño de ambiente para bar o local de ocio. Estética potente con secciones de carta y ambiente.</p>
+          <div class="project-footer">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="project-link" aria-hidden="true">↗</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pablopalc.github.io/Landing-Aluminios/" target="_blank" rel="noopener noreferrer"
+         class="project-card reveal" aria-label="Ver proyecto Aluminios">
+        <div class="project-card-inner">
+          <div class="project-cat">Landing Page · Industrial</div>
+          <h3 class="project-title">Aluminios</h3>
+          <p class="project-desc">Web corporativa para empresa de carpintería metálica. Presentación de servicios, trabajos realizados y contacto.</p>
+          <div class="project-footer">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="project-link" aria-hidden="true">↗</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pablopalc.github.io/Landing-Bunker-Liquidaciones/" target="_blank" rel="noopener noreferrer"
+         class="project-card reveal" aria-label="Ver proyecto Bunker Liquidaciones">
+        <div class="project-card-inner">
+          <div class="project-cat">Landing Page · Retail</div>
+          <h3 class="project-title">Bunker Liquidaciones</h3>
+          <p class="project-desc">Landing para tienda de liquidaciones. Enfocada en urgencia y oferta, con catálogo visual y CTA directo.</p>
+          <div class="project-footer">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="project-link" aria-hidden="true">↗</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pablopalc.github.io/Landing-Neycar-Eco-Center/" target="_blank" rel="noopener noreferrer"
+         class="project-card reveal" aria-label="Ver proyecto Neycar Eco Center">
+        <div class="project-card-inner">
+          <div class="project-cat">Landing Page · Automoción</div>
+          <h3 class="project-title">Neycar Eco Center</h3>
+          <p class="project-desc">Web para centro de automoción ecológico. Comunicación de valores sostenibles con servicios y localización.</p>
+          <div class="project-footer">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="project-link" aria-hidden="true">↗</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pablopalc.github.io/Landing-Clinica-Veterinaria-Ramon-y-" target="_blank" rel="noopener noreferrer"
+         class="project-card reveal" aria-label="Ver proyecto Clínica Veterinaria">
+        <div class="project-card-inner">
+          <div class="project-cat">Landing Page · Salud animal</div>
+          <h3 class="project-title">Clínica Veterinaria</h3>
+          <p class="project-desc">Página para clínica veterinaria. Tono cercano y profesional, con servicios, equipo y formulario de contacto.</p>
+          <div class="project-footer">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="project-link" aria-hidden="true">↗</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pablopalc.github.io/Diet-tica-Valher-/" target="_blank" rel="noopener noreferrer"
+         class="project-card reveal" aria-label="Ver proyecto Dietética Valher">
+        <div class="project-card-inner">
+          <div class="project-cat">Landing Page · Salud</div>
+          <h3 class="project-title">Dietética Valher</h3>
+          <p class="project-desc">Web para tienda de nutrición y salud. Diseño limpio orientado al bienestar, con productos y contacto.</p>
+          <div class="project-footer">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="project-link" aria-hidden="true">↗</div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     ABOUT
+     ============================================= -->
+<section class="about-section" id="about" aria-label="Sobre mí">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Soy un <strong>desarrollador frontend junior</strong> con foco en crear webs reales para negocios locales. No hago demos genéricas — cada proyecto ha sido pensado para un negocio concreto, con sus necesidades y su identidad.</p>
+        <p>Trabajo principalmente con <strong>HTML, CSS y React</strong> para webs a medida, y con <strong>Shopify y WordPress</strong> cuando el cliente necesita gestionar su propio contenido o tienda.</p>
+        <p>Tengo un nivel <strong>medio en SEO</strong>: optimización on-page, estructura de headings, metadatos, schema markup y mejora de Core Web Vitals para que los proyectos no solo se vean bien, sino que también posicionen.</p>
+        <p>Una de mis ventajas diferenciales es el dominio de <strong>herramientas de IA</strong> como Claude para acelerar el desarrollo, integrar funcionalidades inteligentes y entregar proyectos de mayor calidad en menos tiempo.</p>
+        <p>Busco mi primera oportunidad estable donde seguir creciendo y aportar valor desde el primer día.</p>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat-box">
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Proyectos reales</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Tecnologías</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Negocios locales</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">IA</div>
+          <div class="stat-label">Integración Claude</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     CONTACT
+     ============================================= -->
+<section class="contact-section" id="contact" aria-label="Contacto">
+  <div class="section-inner">
+    <div class="contact-inner reveal">
+      <h2 class="contact-title">¿Hablamos de tu<br><em>próximo proyecto?</em></h2>
+      <p class="contact-sub">Disponible para trabajo freelance, prácticas o posición junior.</p>
+      <a href="mailto:hola@palazon.dev" class="contact-email">hola@palazon.dev</a>
+      <div class="social-links">
+        <a href="https://github.com/pablopalc" target="_blank" rel="noopener noreferrer" class="social-link">GitHub ↗</a>
+        <a href="https://www.instagram.com/palazon_dev" target="_blank" rel="noopener noreferrer" class="social-link">Instagram ↗</a>
+        <a href="https://www.tiktok.com/@palazon_dev" target="_blank" rel="noopener noreferrer" class="social-link">TikTok ↗</a>
+        <a href="https://ulirio.com" target="_blank" rel="noopener noreferrer" class="social-link">Ulirio.com ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer>
+  <p>© 2026 palazondev</p>
+  <p>Diseñado y desarrollado por palazondev</p>
+</footer>
+
+<!-- =============================================
+     JAVASCRIPT
+     ============================================= -->
+<script>
+  // SCROLL PROGRESS
+  const progressBar = document.getElementById('scroll-progress');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    progressBar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100 + '%';
+  });
+
+  // NAV scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // CUSTOM CURSOR — desktop only
+  const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+  if (!isTouchDevice) {
+    const dot = document.getElementById('cursor-dot');
+    const ring = document.getElementById('cursor-ring');
+    const label = document.getElementById('cursor-label');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+      label.style.left = mx + 'px'; label.style.top = my + 'px';
+    });
+
+    (function animateRing() {
+      rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+      requestAnimationFrame(animateRing);
+    })();
+
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.classList.add('hovering');
+        const txt = el.getAttribute('data-cursor') || '';
+        if (txt) { label.textContent = txt; label.classList.add('visible'); }
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.classList.remove('hovering');
+        label.classList.remove('visible');
+      });
+    });
+
+    document.querySelectorAll('.project-card').forEach(el => el.setAttribute('data-cursor', 'Ver →'));
+  }
+
+  // MAGNETIC BUTTONS
+  document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      btn.style.transform = `translate(${(e.clientX - r.left - r.width/2) * 0.22}px, ${(e.clientY - r.top - r.height/2) * 0.22}px)`;
+    });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+  });
+
+  // CARD 3D TILT
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = `perspective(800px) rotateY(${x*5}deg) rotateX(${-y*5}deg) translateZ(4px)`;
+    });
+    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+  });
+
+  // HERO PARALLAX
+  const heroInner = document.querySelector('.hero-inner');
+  const heroLines = document.querySelector('.hero-lines');
+  window.addEventListener('scroll', () => {
+    const s = window.scrollY;
+    if (heroInner) heroInner.style.transform = `translateY(${s * 0.18}px)`;
+    if (heroLines) heroLines.style.transform = `translateY(${s * 0.1}px)`;
+  });
+
+  // HERO NAME char split
+  const heroName = document.querySelector('.hero-name');
+  if (heroName) {
+    heroName.innerHTML = heroName.innerHTML.replace(/palazon/, m =>
+      m.split('').map((c, i) =>
+        `<span class="char" style="animation-delay:${0.4 + i * 0.05}s">${c}</span>`
+      ).join('')
+    );
+  }
+
+  // COUNTER animation
+  function animateCounter(el, target) {
+    const num = parseInt(target);
+    if (isNaN(num)) { el.textContent = target; return; }
+    const suffix = target.replace(/[0-9]/g, '');
+    let start = null;
+    (function step(ts) {
+      if (!start) start = ts;
+      const p = Math.min((ts - start) / 1200, 1);
+      el.textContent = Math.floor((1 - Math.pow(1 - p, 3)) * num) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    })(performance.now());
+  }
+
+  // SCROLL REVEAL
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+          const numEl = entry.target.querySelector('.stat-num');
+          if (numEl) animateCounter(numEl, numEl.textContent.trim());
+        }, i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale')
+    .forEach(el => observer.observe(el));
+
+  // MARQUEE pause on hover
+  const track = document.getElementById('marquee');
+  if (track) {
+    track.parentElement.addEventListener('mouseenter', () => track.style.animationPlayState = 'paused');
+    track.parentElement.addEventListener('mouseleave', () => track.style.animationPlayState = 'running');
+  }
+</script>
+
+</body>
+</html>

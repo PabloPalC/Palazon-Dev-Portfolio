@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Bloquear copia duplicada del sitio (evita contenido duplicado)
+Disallow: /Portfolio%20Palazon%20Dev/
+
+Sitemap: https://palazondev.com/sitemap.xml
